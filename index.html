@@ -4,6 +4,8 @@
 		First Page
 	</title>
 	<style>
+	/*Font Links*/
+
 		body{
 			margin: 0;
 		}
@@ -47,7 +49,7 @@
 		#home{
 			width: 100%;
 			height: 100%;
-			background-image: url('dev3.jpg');
+			background-image: url('imgs/dev3.jpg');
 			background-size: cover; 
 			background-repeat: no-repeat; 
 			opacity: 0.8;
@@ -58,7 +60,7 @@
 			margin-top:0; 
 			padding-top: 20%; 
 			color: white; 
-			font-family: Roboto; 
+			font-family: 'Roboto', sans-serif; 
 			font-size: 50px;
 		}
 
@@ -68,7 +70,9 @@
 			border-top-width: 7px;
 		}
 		#aboutHeader{
-			text-align: center;
+			font-size: 40px;
+			font-weight: bold;
+			font-family: 'Raleway', sans-serif; 
 		}
 		#categoryAbout{
 				width: 15%;
@@ -76,6 +80,16 @@
 				color: white;
 				margin-top:0;
 				padding: 5px; 
+		}
+		#aboutDesc{
+			font-size: 15px;
+			font-family: 'Inconsolata', monospace;
+			width: 70%;
+		}
+		#aboutImage{
+			width: 60%;
+			height: 50%;
+			background-image: url('imgs/dev2.jpeg');
 		}
 	</style>
 </head>
@@ -101,9 +115,22 @@
 <!--Home Ends -->
 	<!--About begins-->
 	<section id="About">
-			<center><h3 id="categoryAbout"> About Us</h3></center>
-			<h1 id="aboutHeader">Some About Text.....</h1>
+			<center>
+				<h3 id="categoryAbout"> About Us</h3>
+				<br>
+				<h1 id="aboutHeader">SOME ABOUT TEXT.....</h1>
+				
+				<div id="aboutImage"></div>
+				<p id="aboutDesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+			
+			</center>
 	</section>
 	<!--About ends-->
+	<!--Most Visited Sites-->
+	<section id="Visited">
+		
+
+	</section>
 </body>
 </html>
