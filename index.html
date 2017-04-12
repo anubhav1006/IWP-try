@@ -3,104 +3,30 @@
 	<title> 
 		First Page
 	</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript" src="script.js"></script>
+
 	<style>
 	/*Font Links*/
 
-		body{
-			margin: 0;
-		}
-		/*Navigation Bar*/
-
-		#navigation{
-				
-				list-style-type:none;
-				margin:0;
-				padding:0;
-				overflow: hidden;
-    			background-color: #333;
-    			top: 0;
-    			z-index: 100;
-  				position: fixed;
-    			width: 100%; 
-		}
-
-		.navbar{
-			float:right;
-			color: white; 
-		}
-		.navigationlink{
-			padding: 15px 25px;
-			display: block;
-    		color: white;
-    		text-align: center;	
-    		text-decoration: none;
-		}
-		.navigationlink:hover{
-			background-color: #111;
-		}
-		.navheader{
-			float: left;
-			padding: 15px;
-		}
-		.navheader:hover{
-			background-color: #111;
-		}
-		/*Home*/
-		#home{
-			width: 100%;
-			height: 100%;
-			background-image: url('imgs/dev3.jpg');
-			background-size: cover; 
-			background-repeat: no-repeat; 
-			opacity: 0.8;
-			background-attachment: fixed;
-    		background-position: center;
-		}
-		#homeText{
-			margin-top:0; 
-			padding-top: 20%; 
-			color: white; 
-			font-family: 'Roboto', sans-serif; 
-			font-size: 50px;
-		}
-
-		/*About*/
-		#About{
-			border-top-style: solid;
-			border-top-width: 7px;
-		}
-		#aboutHeader{
-			font-size: 40px;
-			font-weight: bold;
-			font-family: 'Raleway', sans-serif; 
-		}
-		#categoryAbout{
-				width: 15%;
-				background-color: black;
-				color: white;
-				margin-top:0;
-				padding: 5px; 
-		}
-		#aboutDesc{
-			font-size: 15px;
-			font-family: 'Inconsolata', monospace;
-			width: 70%;
-		}
-		#aboutImage{
-			width: 60%;
-			height: 50%;
-			background-image: url('imgs/dev2.jpeg');
-		}
+		
 	</style>
+
+	<script type="text/javascript">
+
+
+	</script>
 </head>
 <body>
 <!--Navbar begins-->
 	<section id="navigationBar">
 		<ul id="navigation">
-			<li class="navbar navheader ">Big Heading.....</li>
+			<li class="navbar navheader ">Indian Tourism </li>
+			<li class="navbar"><a class="navigationlink" href="#Contact">Footer</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Contact">Contact</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Sites">Helpful Sites</a></li>
-			<li class="navbar"><a class="navigationlink" href="#Visited">Most Visited</a></li>
+			<li class="navbar"><a class="navigationlink" href="#places">Places</a></li>
+			<li class="navbar"><a class="navigationlink" href="#Heritage">Our Heritage</a></li>
 			<li class="navbar"><a class="navigationlink" href="#About">About</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Home">Home</a></li>
 		</ul>
@@ -109,7 +35,7 @@
 	<!--Home begins-->
 	<section id="Home">
 		<center>
-				<h1 id="homeText"> Welcome to <br> .................................</h1>
+				<h1 id="homeText"> Welcome to <br> Indian Tourism</h1>
 		</center>
 	</section>
 <!--Home Ends -->
@@ -127,10 +53,58 @@
 			</center>
 	</section>
 	<!--About ends-->
-	<!--Most Visited Sites-->
-	<section id="Visited">
-		
+	<!--Slideshow-->
+	<section id="Slideshow">
+	
+	<div class="slideshows">
+  		<img class="mySlides" src="imgs/cloud.gif" style="width:100%">
+  		<img class="mySlides" src="imgs/mountain.gif" style="width:100%">
+  		<img class="mySlides" src="imgs/deerRun.gif" style="width:100%">
+	</div>
+
 
 	</section>
+	<!--Slideshow ends-->
+
+	<!--Our Heritage-->
+	<section id="Heritage">
+
+
+	</section>
+	<!--Our Heritage ends-->
+	<!--Most Visited Places-->
+	<section id="visited">
+
+
+	</section>
+	<!--Most visited places ends-->
+	<!--Helpful Sites-->
+	<section id="Sites">
+
+	</section>
+	<!--Helpful site ends-->
+	<!--Footer-->
+	<section id="footer">
+
+	</section>
+	<!--Footer ends-->
+
+	<script type="text/javascript">
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("mySlides");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    		x[myIndex-1].style.display = "block";  
+    		setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+
+	</script>
 </body>
 </html>
