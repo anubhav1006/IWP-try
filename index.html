@@ -1,21 +1,20 @@
 <html>
 <head>
-	<title> 
+	<title>
 		First Page
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<script type="text/javascript" src="script.js"></script>
 
+
 	<style>
 	/*Font Links*/
 
-		
+
 	</style>
 
-	<script type="text/javascript">
+	<script type="text/javascript"></script>
 
-
-	</script>
 </head>
 <body>
 <!--Navbar begins-->
@@ -25,8 +24,8 @@
 			<li class="navbar"><a class="navigationlink" href="#Contact">Footer</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Contact">Contact</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Sites">Helpful Sites</a></li>
-			<li class="navbar"><a class="navigationlink" href="#places">Places</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Heritage">Our Heritage</a></li>
+			<li class="navbar"><a class="navigationlink" href="#places">Map</a></li>
 			<li class="navbar"><a class="navigationlink" href="#About">About</a></li>
 			<li class="navbar"><a class="navigationlink" href="#Home">Home</a></li>
 		</ul>
@@ -45,66 +44,59 @@
 				<h3 id="categoryAbout"> About Us</h3>
 				<br>
 				<h1 id="aboutHeader">SOME ABOUT TEXT.....</h1>
-				
+
 				<div id="aboutImage"></div>
 				<p id="aboutDesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
 
-			
+
 			</center>
 	</section>
 	<!--About ends-->
 	<!--Slideshow-->
 	<section id="Slideshow">
-	
+
 	<div class="slideshows">
-  		<img class="mySlides" src="imgs/cloud.gif" style="width:100%">
-  		<img class="mySlides" src="imgs/mountain.gif" style="width:100%">
-  		<img class="mySlides" src="imgs/deerRun.gif" style="width:100%">
+  		<img class="mySlides" src="imgs/dev2.jpeg" style="width:100%; height:100%;">
+  		<img class="mySlides" src="imgs/dev3.jpg" style="width:100%; height:100%;">
+  		<img class="mySlides" src="imgs/dev2.jpeg" style="width:100%; height:100%;">
 	</div>
+	<script src="slideshow.js"></script>
 
 
 	</section>
 	<!--Slideshow ends-->
+	<!--Most Visited Places-->
+<section id="places" style="height: 75%; width: 100%;">
+<div id="list" style="float:left;">
+<center>
+<h1>Most visited places</h1>
+<ul>
+<li  onclick="addDelhi()">Delhi</li>
+<li onclick="addMumbai()">Mumbai</li>
+<li onclick="addBangalore()">Bangalore</li>
+<li onclick="addHimachal()">Himachal</li>
+<li onclick="addChennai()">Chennai</li>
+<li onclick="addGoa()">Goa</li>
+</ul>
+<center>
+</div>
+<div id="map" style="height: 100%; width: 100%; width: 80%;float:right;"></div>
 
-	<!--Our Heritage-->
+<script src="maps.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZC_5SPftWxmc1Puntp_ke1jlqjPL2u0&callback=initMap"></script>
+
+</section>
+	<!--Most visited places ends-->
 	<section id="Heritage">
 
 
-	</section>
-	<!--Our Heritage ends-->
-	<!--Most Visited Places-->
-	<section id="visited">
+		</section>
+		<!--Our Heritage ends-->
 
-
-	</section>
-	<!--Most visited places ends-->
-	<!--Helpful Sites-->
-	<section id="Sites">
-
-	</section>
-	<!--Helpful site ends-->
-	<!--Footer-->
-	<section id="footer">
+		<!--Footer-->
+		<section id="footer">
 
 	</section>
 	<!--Footer ends-->
-
-	<script type="text/javascript">
-		var myIndex = 0;
-		carousel();
-
-		function carousel() {
-    	var i;
-    	var x = document.getElementsByClassName("mySlides");
-    	for (i = 0; i < x.length; i++) {
-       		x[i].style.display = "none";  
-    	}
-    	myIndex++;
-    	if (myIndex > x.length) {myIndex = 1}    
-    		x[myIndex-1].style.display = "block";  
-    		setTimeout(carousel, 2000); // Change image every 2 seconds
-		}
-
-	</script>
 </body>
 </html>
