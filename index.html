@@ -43,7 +43,7 @@
 			<center>
 				<h3 id="categoryAbout"> About Us</h3>
 				<br>
-				<h1 id="aboutHeader">SOME ABOUT TEXT.....</h1>
+				<h1 id="aboutHeader">Indian tourism is best.</h1>
 
 				<div id="aboutImage"></div>
 				<p id="aboutDesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
@@ -66,37 +66,64 @@
 	</section>
 	<!--Slideshow ends-->
 	<!--Most Visited Places-->
-<section id="places" style="height: 75%; width: 100%;">
-<div id="list" style="float:left;">
-<center>
-<h1>Most visited places</h1>
-<ul>
-<li  onclick="addDelhi()">Delhi</li>
-<li onclick="addMumbai()">Mumbai</li>
-<li onclick="addBangalore()">Bangalore</li>
-<li onclick="addHimachal()">Himachal</li>
-<li onclick="addChennai()">Chennai</li>
-<li onclick="addGoa()">Goa</li>
-</ul>
-<center>
-</div>
-<div id="map" style="height: 100%; width: 100%; width: 80%;float:right;"></div>
+<section id="places">
+	<div id="list">
+		<center>
+			<h1 id="categoryMostVisited">Most visited places</h1>
+			<ul>
+				<li  onclick="addDelhi()">Delhi</li>
+				<li onclick="addMumbai()">Mumbai</li>
+				<li onclick="addBangalore()">Bangalore</li>
+				<li onclick="addHimachal()">Himachal</li>
+				<li onclick="addChennai()">Chennai</li>
+				<li onclick="addGoa()">Goa</li>
+			</ul>
+		</center>
+	</div>
 
-<script src="maps.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZC_5SPftWxmc1Puntp_ke1jlqjPL2u0&callback=initMap"></script>
+	<div id="map">
 
+	<script src="maps.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOZC_5SPftWxmc1Puntp_ke1jlqjPL2u0&callback=initMap"></script>
+	</div>
 </section>
 	<!--Most visited places ends-->
 	<section id="Heritage">
 
 
+			<div class="slideshowsHeritage">
+
+				<h3 id="categoryHeritage" >Our Heritage</h3>
+
+					<img class="mySlidesHeritage" src="imgs/cloud.gif" style="width:100%; height:100%;">
+		  		<img class="mySlidesHEritage" src="imgs/dev2.jpeg" style="width:100%; height:100%;">
+
+			</div>
+			<script src="slideshowHeritage.js"></script>
+
+
+
 		</section>
 		<!--Our Heritage ends-->
 
+		<!--MeetUs-->
+		<section id="MeetUs">
+
+			<img id="developer1" >
+			<img id="developer2">
+
+		</section>
+		<!--MeetUs ends-->
+
 		<!--Footer-->
 		<section id="footer">
+				<div id="links">
 
-	</section>
+				</div>
+				<div id="form">
+
+				</div>
+		</section>
 	<!--Footer ends-->
 </body>
 </html>
