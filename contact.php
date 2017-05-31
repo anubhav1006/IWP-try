@@ -30,6 +30,7 @@ $result = "Your message has been sent succesfully!";
 // Your Auto Replay Message//
 mail("$email","Thankyou for contacting us !","We will contact you with in next 24 hrs ",$headers2);
 unset($name,$email,$url,$subject,$message);
+header('location: index.html');
 }
 
  ?>
