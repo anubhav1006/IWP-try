@@ -84,3 +84,16 @@
           map: map
         });
       }
+
+      function addJaipur(){
+
+       var loc = new google.maps.LatLng(26.9124, 75.7873);
+       var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 11,
+          center: loc
+        });
+       var marker = new google.maps.Marker({
+          position: loc,
+          map: map
+        });
+      }
